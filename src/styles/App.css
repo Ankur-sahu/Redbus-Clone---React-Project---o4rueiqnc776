@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ankur */
+header{
+    width: 100%;
+    height: 450px; 
+    background: url("../Images/header_Hero01.png");
+}
+
+.redbus_nav{
+    width: 100%;
+    height: auto;
+    padding: 0 50px;
+    background-color: #d84f57;
+}
+.nav_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Nav_container_right{
+    padding-top: 10px;
+}
+.nav_list{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #fff;
+}
+.nav_list_right{
+    /* padding: 5px 0;
+    align-content: center; */
+}
+.nav_list li{
+    list-style: none;
+}
+.contain_arrow{
+    margin-right: 15px;
+    position: relative;
+}
+.nav_down_arrow{
+    position: absolute;
+    top: 0px;
+    width: 30px;
+    height: 20px;
+    /* padding-top: 10px; */
+}
+.user_nav_img{
+    width: 50px;
+    height: 50px;
+}
+
+/* supriya */
+.countries-main{
+    background-color: #f1f1f1;
+    height: 550px;
+    border-top: 1px solid #aca7a7;
+    border-bottom: 1px solid #aca7a7;
+}
+
+.countries-section{
+    padding: 20px;
+    text-align: center;
+}
+
+.countries-heading{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.countries-list{
+   width: 650px;
+   margin: 50px auto 50px;
+   display: table;
+   box-sizing: border-box;
+   
+}
+
+
+.row{
+    margin: 10px 0;
+}
+
+
+.cc{
+    display: table-cell;
+    padding: 30px 110px;
+    text-align: center;
+    
+}
+
+.countries-list-name{
+    line-height: 2rem;
+    letter-spacing: 2px;
+    color: cadetblue;
+}
+
+.images{
+    width: 130px;
+    height: 80px;
+}
+
+.grow-body{
+    background-color: white
+}
+
+.grow-body2{
+   display: table;
+   padding: 50px;
+   text-align: center;
+   line-height: 2rem;
+}
+
+.growing{
+    text-align: center;
+    font-weight: bold;
+}
+
+.growing-heading{
+    font-family: monospace;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.growing-col{
+   
+    width: 30%;
+    line-height: 2rem;
+    display: table-cell;
+    text-align: center;
+}
+
+
+.grow{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grow1{
+    font-size: 40px;
+    color: rgb(189, 61, 61);
+    /* font-weight: bold; */
+}
+
+.grow2{
+    
+    width: 60%;
+    text-align: center;
+    margin-left: 90px;
+    padding: 15px;
+}
+
+
+.fake_div_footer {
+    border-top: 1px solid grey;
+    background: rgb(229, 229, 229);
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+.top_bus_routes {
+    width: 90%;
+    padding: 10px 0px 20px;
+    margin: 20px;
+    border-bottom: 1px solid rgb(104, 95, 95);;
+    display: flex;
+    justify-content: space-between
+}
+
+.design_heading {
+    font-size: 17px;
+    color:rgb(104, 95, 95);
+    padding-bottom: 10px;
+    line-height: 20px;
+
+}
+
+div p {
+    line-height: 28px;
+    color: rgb(104, 95, 95);
+}
+
+.top_operation {
+    width: 90%;
+    padding-left: 18px;
+}
+.top {
+    padding: 5px 0 15px 0;
+}
+
+.last {
+    text-align: end;
+    padding: 5px 0 15px 0;
+}
+.operation_inside{
+    word-spacing: 5px;
+    line-height: 25px;
+    font-size: 16px;
+    color: rgb(104, 95, 95);
+}
+.footer{
+    background: rgb(27,35,48);
+    display: flex;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 45px;
+    justify-content: space-evenly;
+}
+
+div h3{
+    color:rgb(172, 166, 166);
+    font-size: 15px;
+    line-height: 30px;
+}
+.logo_footer{
+    width: 300px;
+   
+    
+}
+.online_booking:hover{
+    color: white;
+}
+.para_logo{
+   
+    line-height: 21px;
+}
+.online_booking{
+    text-decoration: none;
+    color: rgb(216, 207, 207);
+    font-size: 20px;
+}
+.copy_right{
+    padding-top: 20px;
+}
