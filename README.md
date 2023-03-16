@@ -1,5 +1,12 @@
 # boilerplate-react-functional-public
 
+dynamic-routes-webpack-plugin
+'dynamic-routes-webpack-plugin/lib/client.js',
+new DynamicRoutesWebpackPlugin({
+
+routes: paths.routes
+
+})
 In this app we will be making a Word and Character counter app.
 First there needs to be a <code>textarea</code> element which will take the input
 from user.

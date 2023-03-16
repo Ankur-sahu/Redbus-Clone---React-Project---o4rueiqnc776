@@ -5,6 +5,7 @@
 }
 /*ankur */
 header{
+    position: relative;
     width: 100%;
     height: 450px; 
     background: url("../Images/header_Hero01.png");
@@ -55,6 +56,115 @@ header{
     height: 50px;
 }
 
+.header-search-box{
+    position: absolute;
+    top: 210px;
+    left: 21%;
+    width: 57%;
+    height: 50px;
+    
+}
+.header-search-inner-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+}
+.header-search-input-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.header-input-wraper{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+}
+.header-input-wraper>label{
+    width: 50px;
+    height: 50px;
+}
+.header-input-wraper>label img{
+    
+    width: 30px;
+    height: 40px;
+    padding-top: 10px;
+}
+.search-input-text{
+    
+    width: 100%;
+    height: 50px;
+}
+.error-msg{
+    border: 1px solid red;
+    
+}
+.date-pick{
+    width: 100%;
+    border: none;
+}
+.search-input-text>label{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #d2d2d2;
+}
+.search-input-text>input{
+    height: 30px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #555555;
+}
+.dest_image{
+    margin-left: 15px;
+}
+.header-input-wraper-date{
+    width: 15%;
+    height: 50px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
+    /* border: 1px solid #d2d2d2; */
+}
+.header-input-wraper-btn{
+    
+    width: 20%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d74f57;
+    color: #fff;
+    
+}
+.header-input-wraper-date>label{
+    width: 50px;
+    height: 50px;
+}
+.header-input-wraper-date>label img{
+    width: 40px;
+    height: 50px;
+}
+
+.header-search-switch-btn{
+    position: absolute;
+    top: 10px;
+    left: 215px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+}
+.header-search-switch-btn img{
+    width: 100%;
+    height: 100%;
+}
 /* supriya */
 .countries-main{
     background-color: #f1f1f1;
@@ -237,4 +347,12 @@ div h3{
 }
 .copy_right{
     padding-top: 20px;
+}
+
+.bus-search-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

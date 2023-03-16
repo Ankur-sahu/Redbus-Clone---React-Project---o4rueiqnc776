@@ -1,12 +1,21 @@
 import React from 'react'
 import '../styles/App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './home/Home';
+import BusList from './booking/BusList';
 
 const App = () => {
 
 
   return (
-    <Home />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/bus-tickets' element={<BusList />} /> 
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
