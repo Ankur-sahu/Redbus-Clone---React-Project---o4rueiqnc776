@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../layouts/Nav";
+
 import {useNavigate} from "react-router-dom"
 import switchBtn from "../../Images/switch_btn.png"
 import building from "../../Images/search-building.png"
@@ -49,7 +49,7 @@ function Header() {
   return (
     <>
       <header>
-        <Nav />
+        {/* <Nav /> */}
         <div className="header-search-box">
           <div className="header-search-inner-box">
             <div className="header-search-input-container">

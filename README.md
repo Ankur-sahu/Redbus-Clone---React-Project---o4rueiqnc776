@@ -7,6 +7,7 @@ new DynamicRoutesWebpackPlugin({
 routes: paths.routes
 
 })
+https://medium.com/analytics-vidhya/javascript-how-to-add-dynamic-key-to-object-19280ca70afd add dynamic keys to obj
 In this app we will be making a Word and Character counter app.
 First there needs to be a <code>textarea</code> element which will take the input
 from user.

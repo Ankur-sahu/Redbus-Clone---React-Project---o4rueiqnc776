@@ -353,6 +353,71 @@ div h3{
     width: 100%;
     height: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.bus-search-list-container{
+    width: 80%;
+    height: auto;
+    
+}
+.sortng-tab{
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border: 2px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.bus-list{
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    margin-top: 5px;
+    border: 2px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.bus-list:hover{
+    box-shadow: 2px 2px #555555;
+}
+.title-sort-tab{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.title-sort-list{
+    width: 30%;
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.bus-title{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.view-seat{
+    width: 110%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: #d84f57;
+    color: #fff;
+}
+.view-seat:hover{
+    background: #da2c37;
 }
