@@ -421,3 +421,55 @@ div h3{
 .view-seat:hover{
     background: #da2c37;
 }
+.bus-body{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    border: 1px solid red;
+}
+.driver{
+    width: 10%;
+    height: 250px;
+    border: 1px solid blue;
+}
+.seat-container{
+    width: 90%;
+    padding: 10px;
+    height: 250px;
+    border: 1px solid blue;
+}
+.steering{
+    width: 80%;
+    height: auto;
+}
+.seat-container > div{
+    width: 100%;
+    height: 100%;
+    
+}
+.seat-check{
+    width: 10%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    
+}
+.seat-check:hover{
+    background: #aca7a7;
+    border-radius: 10px;
+}
+.seat-image{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*not fond*/
+.not-found{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

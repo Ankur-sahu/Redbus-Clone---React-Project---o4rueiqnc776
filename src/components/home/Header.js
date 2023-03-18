@@ -49,7 +49,7 @@ function Header() {
   return (
     <>
       <header>
-        {/* <Nav /> */}
+        
         <div className="header-search-box">
           <div className="header-search-inner-box">
             <div className="header-search-input-container">

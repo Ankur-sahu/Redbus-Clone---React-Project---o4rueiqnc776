@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './home/Home';
 import BusList from './booking/BusList';
 import Nav from './layouts/Nav';
+import NotFound from './general/NotFound';
 
 
 const App = () => {
@@ -16,6 +17,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/bus-tickets' element={<BusList />} /> 
+        <Route path='/*' element={<NotFound />} /> 
+
 
       </Routes>
     </BrowserRouter>
