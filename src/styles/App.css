@@ -433,6 +433,7 @@ div h3{
     border: 1px solid blue;
 }
 .seat-container{
+    position: relative;
     width: 90%;
     padding: 10px;
     height: 250px;
@@ -455,6 +456,7 @@ div h3{
     display: inline-block;
     
 }
+
 .seat-check:hover{
     background: #aca7a7;
     border-radius: 10px;
@@ -463,7 +465,48 @@ div h3{
     width: 100%;
     height: 100%;
 }
-
+.book-ticket-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.book-ticket-container > button{
+    width: 10%;
+    height: 70%;
+    border: none;
+    background: #da2c37;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+.book-ticket-container > button:hover{
+    background: #d74f57;
+}
+.ticket-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.ticket-body>div{
+    width: 70%;
+}
+.ticket-details-body{
+    border: 3px solid black;
+}
+.ticket-details-body>.bus-list{
+    border: none;
+}
+.success-status>h1{
+    color: green;
+    text-align: center;
+}
 
 /*not fond*/
 .not-found{

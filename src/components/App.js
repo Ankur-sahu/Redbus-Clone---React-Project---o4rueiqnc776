@@ -5,6 +5,7 @@ import Home from './home/Home';
 import BusList from './booking/BusList';
 import Nav from './layouts/Nav';
 import NotFound from './general/NotFound';
+import PrintTicket from './booking/PrintTicket';
 
 
 const App = () => {
@@ -17,7 +18,9 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/bus-tickets' element={<BusList />} /> 
+        <Route path='/booked-ticket' element={<PrintTicket />} /> 
         <Route path='/*' element={<NotFound />} /> 
+
 
 
       </Routes>

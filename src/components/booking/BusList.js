@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-import { useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import loader from "../../Images/loading-splash.gif"
 import steering from "../../Images/bus_steering.png"
 import empty from "../../Images/empty_seat.png"
 import bookedS from "../../Images/booked_seat.png"
+
 
 
 const ViewSeat = (props) => {
@@ -69,15 +70,21 @@ const ViewSeat = (props) => {
 }
 
 const RenderBuses = (props) => {
+    const navigate = useNavigate()
     const { sortFn, setBuses } = props
     const [booked, setBooked] = useState([])
     const clickFn = (index) => {
         let list = [...props.data]
-        list[index].clicked = true
+        list[index].clicked = !list[index].clicked
         setBuses(list)
 
     }
+    const confirmBooked = (busObj)=>{
+        if(booked.length>0){
 
+            navigate('/booked-ticket',{state:{busObj, booked,date:props.date}})
+        }
+    }
 
     return (
         <>
@@ -135,7 +142,11 @@ const RenderBuses = (props) => {
                                         </div>
                                     </div>
                                     {bus.clicked && <ViewSeat booked={booked} setBooked={setBooked}/>}
-                                    {bus.clicked && <div>Book</div>}
+                                    {bus.clicked && 
+                                    <div className="book-ticket-container">
+                                        <button onClick={()=>confirmBooked(bus)}>Book Ticket</button>
+                                    </div>
+                                    }
 
                                     {/* <div>
                                     <h1>{bus.busName}</h1>
@@ -230,8 +241,8 @@ const BusList = () => {
     return (
         <>
             <div className="bus-search-container">
-                {buses ? <RenderBuses setBuses={setBuses} initalData={initalData} sortFn={sortFn} data={buses} /> : <img src={loader} alt="loader" />}
-                <ViewSeat />
+                {buses ? <RenderBuses date={locationP.state.getDate} setBuses={setBuses} initalData={initalData} sortFn={sortFn} data={buses} /> : <img src={loader} alt="loader" />}
+                
             </div>
 
         </>
