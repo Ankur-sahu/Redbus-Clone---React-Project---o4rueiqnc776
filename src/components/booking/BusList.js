@@ -95,7 +95,7 @@ const RenderBuses = (props) => {
                         <div className="sortng-tab">
                             <div className="title-sort-tab">
                                 <div className="bus-title">
-                                    <h4>2 Buses</h4><h3>Found</h3>
+                                    <h4>{props.data.length} Buses</h4><h3>Found</h3>
                                 </div>
                                 <div>
                                     <h4>SORT BY:</h4>

@@ -101,11 +101,13 @@ header{
 }
 .error-msg{
     border: 1px solid red;
+    outline: none;
     
 }
 .date-pick{
     width: 100%;
     border: none;
+    
 }
 .search-input-text>label{
     margin-left: 20px;
