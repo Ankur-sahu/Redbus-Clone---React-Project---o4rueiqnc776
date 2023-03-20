@@ -8,9 +8,9 @@ import calender from "../../Images/calender.png"
 
 function Header() {
   const navigate = useNavigate()
-  const [fromS, setFromS] = useState("")
-  const [toDest, setToDest] = useState("")
-  const [getDate, setGetDate] = useState("")
+  const [fromS, setFromS] = useState("hyderabad")
+  const [toDest, setToDest] = useState("vijayawada")
+  const [getDate, setGetDate] = useState("2023-03-21")
   const [submit, setSubmit] = useState(false)
   const [errorMsg, setErrorMsg] = useState({
     fromS: false,
@@ -70,7 +70,7 @@ function Header() {
 
   }
   useEffect(() => {
-    if (!errorMsg.fromS && !errorMsg.toDest && !errorMsg.getDate && fromS) {
+    if (!errorMsg.fromS && !errorMsg.toDest && !errorMsg.getDate && fromS && submit) {
 
       navigate('/bus-tickets', { state: { fromS, toDest, getDate } })
     }
