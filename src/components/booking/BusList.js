@@ -77,7 +77,7 @@ const RenderBuses = (props) => {
     const clickFn = (index) => {
 
         let list = [...props.data]
-        if(lastIndex !== -1){
+        if(lastIndex !== -1 && lastIndex !== index){
             list[lastIndex].clicked = false    
         }
         list[index].clicked = !list[index].clicked
