@@ -72,11 +72,18 @@ const ViewSeat = (props) => {
 const RenderBuses = (props) => {
     const navigate = useNavigate()
     const { sortFn, setBuses } = props
+    const [lastIndex, setLastIndex] = useState(-1)
     const [booked, setBooked] = useState([])
     const clickFn = (index) => {
+
         let list = [...props.data]
+        if(lastIndex !== -1){
+            list[lastIndex].clicked = false    
+        }
         list[index].clicked = !list[index].clicked
+        setLastIndex(index)
         setBuses(list)
+        setBooked([])
 
     }
     const confirmBooked = (busObj)=>{

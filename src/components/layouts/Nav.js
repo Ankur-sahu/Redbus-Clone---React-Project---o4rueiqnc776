@@ -19,7 +19,7 @@ function Nav() {
                     <ul className="nav_list nav_list_right">
                         <li>Help</li>
                         <li className='contain_arrow'>Manage Booking <img className='nav_down_arrow' src={nav_down_arrow} alt="down arrow"  /></li>
-                        <li className='contain_arrow'><img className='user_nav_img' src={user_nav_img} alt="user_pic" /> </li> {/*<img className='nav_down_arrow' src={nav_down_arrow} alt="down arrow"  /> */}
+                        <li className='contain_arrow'><img className='user_nav_img' src={user_nav_img} alt="user_pic" /> </li> {/*<img className='nav_down_arrow' src={nav_down_arrow} alt="down arrow"/>*/}
 
                     </ul>
                 </div>
