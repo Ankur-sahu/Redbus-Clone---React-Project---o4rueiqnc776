@@ -104,15 +104,64 @@ header{
     outline: none;
     
 }
+
 .date-pick{
     width: 100%;
     border: none;
     
 }
+.header-input-wraper-date>label{
+    display: flex;
+    align-items: center;
+}
+.error-msg-date{
+    color: red;
+}
+
+
+.datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  
+}
+.datepicker-toggle-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;base64,...');
+}
+
+.datepicker-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+.datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
 .search-input-text>label{
-    margin-left: 20px;
+    margin-left: 10px;
     font-weight: bold;
-    color: #d2d2d2;
+    color: #6c6969;
 }
 .search-input-text>input{
     height: 30px;
@@ -120,12 +169,13 @@ header{
     border: none;
     font-size: 20px;
     padding-left: 10px;
-    color: #555555;
+    color: #1f1e1e;
 }
 .dest_image{
     margin-left: 15px;
 }
 .header-input-wraper-date{
+    position: relative;
     width: 15%;
     height: 50px;
     box-sizing: border-box;
@@ -140,13 +190,19 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #d74f57;
+    background-color: #da3843;
     color: #fff;
     
 }
 .header-input-wraper-date>label{
     width: 50px;
     height: 50px;
+}
+.date-value{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: smaller;
 }
 .header-input-wraper-date>label img{
     width: 40px;
@@ -358,6 +414,12 @@ div h3{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    
+    transition: 5s;
 }
 .bus-search-list-container{
     width: 80%;
@@ -427,19 +489,19 @@ div h3{
     width: 100%;
     height: 250px;
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .driver{
     width: 10%;
     height: 250px;
-    border: 1px solid blue;
+    border: 2px solid black;
 }
 .seat-container{
     position: relative;
     width: 90%;
     padding: 10px;
     height: 250px;
-    border: 1px solid blue;
+    border: 1px solid black;
 }
 .steering{
     width: 80%;
@@ -448,7 +510,6 @@ div h3{
 .seat-container > div{
     width: 100%;
     height: 100%;
-    
 }
 .seat-check{
     width: 10%;

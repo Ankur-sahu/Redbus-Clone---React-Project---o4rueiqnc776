@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom"
 import switchBtn from "../../Images/switch_btn.png"
 import building from "../../Images/search-building.png"
 import ValidateInputComp from "../general/ValidateInputComp";
+import calender from "../../Images/calender.png"
 
 function Header() {
   const navigate = useNavigate()
@@ -23,10 +24,10 @@ function Header() {
     if (day <= e.target.value.slice(-2)) {
       console.log("done")
       setGetDate(e.target.value)
-      setErrorMsg({...errorMsg,getDate:false})
+      setErrorMsg({ ...errorMsg, getDate: false })
     } else {
       console.log("sad")
-      setErrorMsg({...errorMsg,getDate:true})
+      setErrorMsg({ ...errorMsg, getDate: true })
     }
 
     //setGetDate(e.target.value)
@@ -89,7 +90,7 @@ function Header() {
                 </label>
                 <div className="search-input-text">
                   <label htmlFor="source">FROM</label>
-                  <input type="text" id="source" value={fromS} onChange={(e) => setFromS(e.target.value)} />
+                  <input type="text" id="source" value={fromS} onChange={(e) => setFromS(e.target.value)} placeholder="hyderabad" />
 
                 </div>
               </div>
@@ -99,15 +100,20 @@ function Header() {
                 </label>
                 <div className="search-input-text">
                   <label htmlFor="destination">TO</label>
-                  <input type="text" id="destination" value={toDest} onChange={(e) => setToDest(e.target.value)} />
+                  <input type="text" id="destination" value={toDest} onChange={(e) => setToDest(e.target.value)} placeholder="vijayawada" />
 
                 </div>
               </div>
-              <div className="header-input-wraper-date">
+              <div className="header-input-wraper-date" >
                 {/* <label htmlFor="date">
                   <img src={calender} alt="calender-icon" />
                 </label> */}
-                <input type="date" className={errorMsg.getDate ? "error-msg" : "date-pick"} value={getDate} onChange={(e) => checkDate(e)} />
+                {/* <input type="date" className={errorMsg.getDate ? "error-msg" : "date-pick"} value={getDate} onChange={(e) => checkDate(e)} /> */}
+                <label htmlFor="date" className={errorMsg.getDate && "error-msg-date" } ><img src={calender} alt="calender icon" /> {getDate? <span className="date-value">{getDate}</span> :"Date"} </label>
+                <span class="datepicker-toggle">
+                  <span class="datepicker-toggle-button"></span>
+                  <input type="date" id="date" class="datepicker-input" onChange={(e) => checkDate(e)}/>
+                </span>
               </div>
               <div className="header-input-wraper-btn" onClick={submitFn} >
                 <h4>Search Bus</h4>
