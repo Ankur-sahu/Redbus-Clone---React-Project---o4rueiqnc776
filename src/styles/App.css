@@ -9,6 +9,8 @@ header{
     width: 100%;
     height: 450px; 
     background: url("../Images/header_Hero01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .redbus_nav{
@@ -16,7 +18,7 @@ header{
     height: auto;
     padding: 0 50px;
     background-color: #d84f57;
-}
+} 
 .nav_container{
     width: 100%;
     height: auto;
@@ -58,9 +60,9 @@ header{
 
 .header-search-box{
     position: absolute;
-    top: 210px;
+    top: 53%;
     left: 21%;
-    width: 57%;
+    width: 60%;
     height: 50px;
     
 }
@@ -212,7 +214,7 @@ header{
 .header-search-switch-btn{
     position: absolute;
     top: 10px;
-    left: 215px;
+    left: 28%;
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -223,7 +225,7 @@ header{
     width: 100%;
     height: 100%;
 }
-/* supriya */
+
 .countries-main{
     background-color: #f1f1f1;
     height: 550px;
@@ -436,6 +438,9 @@ div h3{
     align-items: center;
     justify-content: space-between;
 
+}
+.short-title{
+    cursor: pointer;
 }
 .bus-list{
     width: 100%;

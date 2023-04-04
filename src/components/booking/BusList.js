@@ -88,7 +88,6 @@ const RenderBuses = (props) => {
     }
     const confirmBooked = (busObj)=>{
         if(booked.length>0){
-
             navigate('/booked-ticket',{state:{busObj, booked,date:props.date}})
         }
     }
@@ -108,16 +107,16 @@ const RenderBuses = (props) => {
                                     <h4>SORT BY:</h4>
                                 </div>
                             </div>
-                            <div onClick={() => sortFn("departureTime", props.data)}>
+                            <div className="short-title" onClick={() => sortFn("departureTime", props.data)}>
                                 <h3>Departure</h3>
                             </div>
-                            <div onClick={() => sortFn("arrivalTime", props.data)}>
+                            <div className="short-title" onClick={() => sortFn("arrivalTime", props.data)}>
                                 <h3>Arrival</h3>
                             </div>
-                            <div onClick={() => sortFn("rating", props.data)}>
+                            <div className="short-title" onClick={() => sortFn("rating", props.data)}>
                                 <h3>Rating</h3>
                             </div>
-                            <div onClick={() => sortFn("ticketPrice", props.data)}>
+                            <div className="short-title" onClick={() => sortFn("ticketPrice", props.data)}>
                                 <h3>Fare</h3>
                             </div>
                         </div>
@@ -154,15 +153,6 @@ const RenderBuses = (props) => {
                                         <button onClick={()=>confirmBooked(bus)}>Book Ticket</button>
                                     </div>
                                     }
-
-                                    {/* <div>
-                                    <h1>{bus.busName}</h1>
-                                    <h1>{bus.ticketPrice}</h1>
-                                    <h1>{bus.arrivalTime}</h1>
-                                    <h1>{bus.departureTime}</h1>
-                                    <h1>{bus.source}</h1>
-                                    <h1>{bus.destination}</h1>
-                                </div> */}
                                 </>
                             ))
                         }

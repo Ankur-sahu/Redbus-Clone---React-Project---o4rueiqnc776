@@ -105,10 +105,6 @@ function Header() {
                 </div>
               </div>
               <div className="header-input-wraper-date" >
-                {/* <label htmlFor="date">
-                  <img src={calender} alt="calender-icon" />
-                </label> */}
-                {/* <input type="date" className={errorMsg.getDate ? "error-msg" : "date-pick"} value={getDate} onChange={(e) => checkDate(e)} /> */}
                 <label htmlFor="date" className={errorMsg.getDate && "error-msg-date" } ><img src={calender} alt="calender icon" /> {getDate? <span className="date-value">{getDate}</span> :"Date"} </label>
                 <span class="datepicker-toggle">
                   <span class="datepicker-toggle-button"></span>
@@ -121,7 +117,6 @@ function Header() {
             </div>
             <div className="header-search-switch-btn">
               <img src={switchBtn} alt="switch-btn" onClick={swapFn} />
-
             </div>
           </div>
         </div>
