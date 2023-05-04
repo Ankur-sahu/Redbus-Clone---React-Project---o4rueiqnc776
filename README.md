@@ -1,28 +1,34 @@
-# boilerplate-react-functional-public
+# Red Bus Clone
 
-dynamic-routes-webpack-plugin
-'dynamic-routes-webpack-plugin/lib/client.js',
-new DynamicRoutesWebpackPlugin({
+This is a Red Bus clone developed with HTML, CSS, and React. It features a user-friendly interface that allows you to switch between source and destination, sort by various criteria, select a bus seat, and book tickets.
 
-routes: paths.routes
+## How to Use
 
-})
-https://medium.com/analytics-vidhya/javascript-how-to-add-dynamic-key-to-object-19280ca70afd add dynamic keys to obj
-In this app we will be making a Word and Character counter app.
-First there needs to be a <code>textarea</code> element which will take the input
-from user.
+To use the Red Bus Clone, simply visit the hosted link https://redbus-clone-by-ankur.netlify.app. From there, you can select your source and destination cities, along with the date of travel. Once you have entered your details, you can click the "Search Buses" button to view available bus options.
 
-Below that element, create 2 divs with id="word-counter" and id="char-counter" respectively.
-#word-counter will show the number of words(empty space is not considered a word) and #char-counter will show the number of characters typed.
+The Red Bus Clone includes several features to make it easy to find the perfect bus for your travel needs:
 
-Also make an input with id="char-limit-input" which takes a number which is the limit of characters we can type in.
-By default char limit should be 50.
+- Switch Source and Destination: If you accidentally select the wrong source or destination city, you can simply click the "Switch" button to swap them.
+- Sort Buses: You can sort buses by four different criteria: "Departure Time," "Arrival Time," "Duration," and "Price." Each criterion has a button that you can click to sort the buses accordingly.
+- Select a Seat: Once you have found the bus you want to book, you can select your seat by clicking on the seat you want. If a seat is already taken, it will be grayed out and unavailable.
+- Book Tickets: Once you have selected your seat, you can click the "Book Tickets" button to proceed to the payment page. On this page, you can enter your personal and payment details to complete the booking process.
 
-And the last input should be a slider input(with id ="fontSize-input") for taking the font size, default and min value should be 16px and max would be 32px.
+## Technologies Used
 
-Apply the fontSize property to the textarea element.
+- HTML
+- CSS
+- React
 
+## How to Run the Project
 
+To run the project locally, follow these steps:
 
-Demo video:-
-<video src="https://d3dyfaf3iutrxo.cloudfront.net/general/upload/e449406acecb4a1186ae9cc77a55933f.mp4" controls autoplay muted>
+1. Clone the repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `npm install` to install the required dependencies.
+4. Run `npm start` to start the development server.
+5. Open `localhost:3000` in your web browser to view the application.
+
+## Conclusion
+
+The Red Bus Clone provides a user-friendly and intuitive interface for booking bus tickets. With its ability to switch source and destination, sort by multiple criteria, select seats, and book tickets, it offers a smooth and enjoyable user experience. Good luck with your project!
